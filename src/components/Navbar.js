@@ -16,11 +16,16 @@ class Navbar extends Component {
 
             <nav className="navbar navbar-inverse">
                 <div className="container-fluid">
+                <div className="navbar-brand" id="bs-example-navbar-collapse-1">  
+                        <ul className="nav navbar-nav navbar-right">
+                            <li><NavLink to="/">Home</NavLink></li>
+                        </ul>
+                      </div>  
                     <div className="navbar-header"> 
-                        <NavLink className="navbar-brand" to="/">Shopping cart</NavLink>
+                        <NavLink className="navbar-brand" to="/product-list">Our Products</NavLink>
                      </div> 
 
-                    <div className="navbar navbar-right" id="bs-example-navbar-collapse-1"> 
+                    <div className="navbar-brand" id="bs-example-navbar-collapse-1">  
                         <ul className="nav navbar-nav navbar-right">
                             <li><NavLink to="/my-cart">
                                 {
@@ -30,7 +35,8 @@ class Navbar extends Component {
                                 }
                                 <i className="glyphicon glyphicon-shopping-cart"></i> My Cart</NavLink></li>
                         </ul>
-                     </div> 
+                      </div>  
+                      
                 </div>
             </nav>
         )
